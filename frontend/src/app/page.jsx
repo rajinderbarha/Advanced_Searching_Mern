@@ -163,7 +163,7 @@ function App() {
   const fetchProducts = async () => {
     setLoading(true);
     try {
-      const response = await axios.get(`${API_URL}/api/products`, {
+      const response = await axios.get(`${API_URL}/products`, {
         params: {
           search: searchTerm,
           page: currentPage,
@@ -198,7 +198,7 @@ function App() {
     setLoading(true);
     try {
       setCurrentPage(1);
-      const response = await axios.get(`${API_URL}/api/products`, {
+      const response = await axios.get(`${API_URL}/products`, {
         params: {
           search: searchTerm,
           page: 1,

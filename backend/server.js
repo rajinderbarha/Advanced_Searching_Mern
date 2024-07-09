@@ -303,6 +303,10 @@ app.get('/products', async (req, res) => {
     });
 });
 
+app.get('/', (req, res) => {
+   res.send('API ENDPOINTS ARE WORKING');  
+})
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
     readDataAndIndex(); // Index data when the server starts
